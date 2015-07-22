@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/timoxman/Movie-Snaps.png)](https://travis-ci.org/timoxman/Movie-Snaps)
+[![Build Status](https://travis-ci.org/dwatson62/Movie-Snaps.svg?branch=master)](https://travis-ci.org/dwatson62/Movie-Snaps)
 
 [![Coverage Status](https://coveralls.io/repos/timoxman/Movie-Snaps/badge.png)](https://coveralls.io/r/timoxman/Movie-Snaps)
 
