@@ -10,6 +10,7 @@ Features To Aim For
 
 [![Coverage Status](https://coveralls.io/repos/timoxman/Movie-Snaps/badge.svg?branch=57-test-validations&service=github)](https://coveralls.io/github/timoxman/Movie-Snaps?branch=57-test-validations)
 
+
 Movie-Snaps
 ===================
 
