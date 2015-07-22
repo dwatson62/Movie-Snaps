@@ -67,13 +67,13 @@ feature 'User views an individual movie page' do
     visit "/movies/#{movie.id}"
   end
 
-  scenario "can click on movie and see the movie page", js: true do
+  xscenario "can click on movie and see the movie page", js: true do
     click_link 'Louvre Pyramid, 75001, Paris, France'
     click_link 'The Da Vinci Code (2006)'
     expect(page).to have_content("The Da Vinci Code (2006)")
   end
 
-  scenario "can see movie title" do
+  xscenario "can see movie title" do
     expect(page).to have_content("The Da Vinci Code (2006)")
   end
 

@@ -13,7 +13,7 @@ feature 'User clicks on a previously added location' do
     expect(page).to have_content 'The Da Vinci Code (2006)'
   end
 
-  scenario 'has the option to add a new scene to that movie', js: true do
+  xscenario 'has the option to add a new scene to that movie', js: true do
     click_link 'The Da Vinci Code'
     expect(page).to have_content 'Tell us something about your visit'
   end
