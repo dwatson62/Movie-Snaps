@@ -8,7 +8,7 @@ feature 'A user wants to add the location for a film' do
     click_link 'Upload photos'
   end
 
-  scenario 'they have the option to enter a location address first' do
+  scenario 'they have the option to enter a location address first', js: true do
     expect(page).to have_button 'Place Marker'
   end
 
@@ -53,7 +53,6 @@ end
 feature 'User views the location index page' do
 
   before do
-    # byebug
     create_visit
     visit new_scene_path
   end
@@ -73,7 +72,8 @@ end
 
 feature 'User views a location profile page' do
 
-  before do
+  before(:each) do
+    byebug
     create_visit
     location = Location.last
     photo = Photo.last

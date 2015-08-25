@@ -76,6 +76,7 @@ group :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'selenium-webdriver', '2.46.2'
+  gem 'launchy'
 end
 
 group :development, :test do

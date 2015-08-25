@@ -56,7 +56,8 @@
                                 <% end %>
 
                                 <span class='likes_count'> <%= photo.likes.count %> </span> <%= 'like'.pluralize photo.likes.count %>
-                              <%= render partial: "partials/commentform", locals: {photo: photo} %>
+                              <%= render partial: "partials/commentform"
+                               %>
                             <% end %>
                             <% if photo.comments.any? %>
                               <ul class="comments">
