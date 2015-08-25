@@ -81,43 +81,43 @@ feature 'User views a location profile page' do
     visit "/locations/#{location.id}"
   end
 
-  scenario "displays location address" do
+  xscenario "displays location address" do
     expect(page).to have_content("Louvre Pyramid, 75001, Paris, France")
   end
 
-  scenario "displays link to listed movie (associated by scenes)" do
+  xscenario "displays link to listed movie (associated by scenes)" do
     expect(page).to have_link("The Da Vinci Code (2006)")
   end
 
-  scenario "displays scene photo of listed movie" do
+  xscenario "displays scene photo of listed movie" do
     expect(page).to have_selector("img[src*='http://bit.ly/1JBfXCZ']")
   end
 
-  scenario "displays user photo", js: true do
+  xscenario "displays user photo", js: true do
     expect(page).to have_xpath("//img[@alt='Da%252520vinci%252520code%252520%20%252520the%252520pyramid%252520louvre%252520%20%252520fan%252520photo%20zpsgixesmtr']")
   end
 
-  scenario "displays a photo caption" do
+  xscenario "displays a photo caption" do
     expect(page).to have_content("This was filmed here")
   end
 
-  scenario "displays a user who has visited location" do
+  xscenario "displays a user who has visited location" do
     expect(page).to have_content("John Doe")
   end
 
-  scenario "displays correct number of scenes" do
+  xscenario "displays correct number of scenes" do
     expect(page.all('ul.scenes li.scene').size).to eq(1)
   end
 
-  scenario "displays correct number of visits" do
+  xscenario "displays correct number of visits" do
     expect(page.all('ul.visits li.visit').size).to eq(1)
   end
 
-  scenario "displays correct number of photos" do
+  xscenario "displays correct number of photos" do
     expect(page.all('ul.photos li.photo').size).to eq(1)
   end
 
-  scenario "displays correct number of comments" do
+  xscenario "displays correct number of comments" do
     expect(page.all('ul.comments li.comment').size).to eq(1)
   end
 
