@@ -73,7 +73,6 @@ end
 feature 'User views a location profile page' do
 
   before(:each) do
-    byebug
     create_visit
     location = Location.last
     photo = Photo.last

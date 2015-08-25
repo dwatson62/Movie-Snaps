@@ -165,7 +165,7 @@ Please feel free to use a different markup language if you do not plan to run
 Live demo on Heroku:
 -------
 
-[Movie-Snaps](https://movie-snaps.herokuapp.com/)
+[Movie-Snaps](https://moviesnaps.herokuapp.com/)
 
 
 Images:
