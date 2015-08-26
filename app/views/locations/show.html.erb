@@ -43,21 +43,19 @@
                             <%= photo.caption %>
                             <% if current_user %>
                               <% liked = false %>
-                                <% photo.likes.each do |l| %>
-                                  <% if current_user.id == l.user_id %>
-                                    <% liked = true %>
-                                    <% break %>
-                                  <% end %>
+                              <% photo.likes.each do |l| %>
+                                <% if current_user.id == l.user_id %>
+                                  <% liked = true %>
+                                  <% break %>
                                 <% end %>
-                                <% if liked == false %>
+                              <% end %>
+                              <% if liked == false %>
 
-                                <%= link_to "♡", photo_likes_path(photo), class: 'likes-link' %>
+                              <%= link_to "♡", photo_likes_path(photo), class: 'likes-link' %>
 
-                                <% end %>
+                              <% end %>
 
-                                <span class='likes_count'> <%= photo.likes.count %> </span> <%= 'like'.pluralize photo.likes.count %>
-                              <%= render partial: "partials/commentform"
-                               %>
+                              <span class='likes_count'> <%= photo.likes.count %> </span> <%= 'like'.pluralize photo.likes.count %>
                             <% end %>
                             <% if photo.comments.any? %>
                               <ul class="comments">
