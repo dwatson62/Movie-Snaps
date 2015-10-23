@@ -8,12 +8,14 @@ Waffle Board
 Features To Aim For
 [https://github.com/timoxman/Movie-Snaps/blob/master/features.md]
 
-[![Coverage Status](https://coveralls.io/repos/timoxman/Movie-Snaps/badge.svg?branch=57-test-validations&service=github)](https://coveralls.io/github/timoxman/Movie-Snaps?branch=57-test-validations)
-
 
 Movie-Snaps
 ===================
 
+Live demo on Heroku:
+--------
+
+[Movie-Snaps](https://moviesnaps.herokuapp.com/)
 
 Collaborators:
 -----
@@ -119,15 +121,6 @@ Technologies Used:
 Set-up Steps:
 -----
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
 * Configuration
     Rails should be installed via the cmd: gem install rails
     To get this application up and running, pull the repo from Github. Add a file called .env to your route directory. (This file is not in the github repo because it's in the gitignore file)
@@ -143,29 +136,12 @@ Things you may want to cover:
     bin/rake db:create
     or bin/rake db:migrate (if you have a previous version of the app)
 
-* Database initialization
-
 * How to run the test suite
     $ rspec
 
 * To See test system
     bin/rails s
     go to http://localhost:3000/
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-    tba
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-
-Live demo on Heroku:
---------
-
-[Movie-Snaps](https://moviesnaps.herokuapp.com/)
 
 
 Images:
